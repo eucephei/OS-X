@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CECC7C9E14916CAE00323677 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECC7C9D14916CAE00323677 /* Cocoa.framework */; };
+		CECC7CA814916CAE00323677 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CECC7CA614916CAE00323677 /* InfoPlist.strings */; };
+		CECC7CAB14916CAE00323677 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC7CAA14916CAE00323677 /* main.m */; };
+		CECC7CAE14916CAE00323677 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CECC7CAC14916CAE00323677 /* Credits.rtf */; };
+		CECC7CB114916CAE00323677 /* IB_CalisthenicsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC7CB014916CAE00323677 /* IB_CalisthenicsAppDelegate.m */; };
+		CECC7CB414916CAF00323677 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECC7CB214916CAF00323677 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CECC7C9914916CAE00323677 /* IB_Calisthenics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IB_Calisthenics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECC7C9D14916CAE00323677 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CECC7CA014916CAE00323677 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CECC7CA114916CAE00323677 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CECC7CA214916CAE00323677 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CECC7CA514916CAE00323677 /* IB_Calisthenics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IB_Calisthenics-Info.plist"; sourceTree = "<group>"; };
+		CECC7CA714916CAE00323677 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CECC7CA914916CAE00323677 /* IB_Calisthenics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IB_Calisthenics-Prefix.pch"; sourceTree = "<group>"; };
+		CECC7CAA14916CAE00323677 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CECC7CAD14916CAE00323677 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CECC7CAF14916CAE00323677 /* IB_CalisthenicsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IB_CalisthenicsAppDelegate.h; sourceTree = "<group>"; };
+		CECC7CB014916CAE00323677 /* IB_CalisthenicsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IB_CalisthenicsAppDelegate.m; sourceTree = "<group>"; wrapsLines = 0; };
+		CECC7CB314916CAF00323677 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CECC7C9614916CAE00323677 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECC7C9E14916CAE00323677 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CECC7C8E14916CAE00323677 = {
+			isa = PBXGroup;
+			children = (
+				CECC7CA314916CAE00323677 /* IB_Calisthenics */,
+				CECC7C9C14916CAE00323677 /* Frameworks */,
+				CECC7C9A14916CAE00323677 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CECC7C9A14916CAE00323677 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CECC7C9914916CAE00323677 /* IB_Calisthenics.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CECC7C9C14916CAE00323677 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CECC7C9D14916CAE00323677 /* Cocoa.framework */,
+				CECC7C9F14916CAE00323677 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CECC7C9F14916CAE00323677 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CECC7CA014916CAE00323677 /* AppKit.framework */,
+				CECC7CA114916CAE00323677 /* CoreData.framework */,
+				CECC7CA214916CAE00323677 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CECC7CA314916CAE00323677 /* IB_Calisthenics */ = {
+			isa = PBXGroup;
+			children = (
+				CECC7CAF14916CAE00323677 /* IB_CalisthenicsAppDelegate.h */,
+				CECC7CB014916CAE00323677 /* IB_CalisthenicsAppDelegate.m */,
+				CECC7CB214916CAF00323677 /* MainMenu.xib */,
+				CECC7CA414916CAE00323677 /* Supporting Files */,
+			);
+			path = IB_Calisthenics;
+			sourceTree = "<group>";
+		};
+		CECC7CA414916CAE00323677 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CECC7CA514916CAE00323677 /* IB_Calisthenics-Info.plist */,
+				CECC7CA614916CAE00323677 /* InfoPlist.strings */,
+				CECC7CA914916CAE00323677 /* IB_Calisthenics-Prefix.pch */,
+				CECC7CAA14916CAE00323677 /* main.m */,
+				CECC7CAC14916CAE00323677 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CECC7C9814916CAE00323677 /* IB_Calisthenics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CECC7CB714916CAF00323677 /* Build configuration list for PBXNativeTarget "IB_Calisthenics" */;
+			buildPhases = (
+				CECC7C9514916CAE00323677 /* Sources */,
+				CECC7C9614916CAE00323677 /* Frameworks */,
+				CECC7C9714916CAE00323677 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IB_Calisthenics;
+			productName = IB_Calisthenics;
+			productReference = CECC7C9914916CAE00323677 /* IB_Calisthenics.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CECC7C9014916CAE00323677 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = CECC7C9314916CAE00323677 /* Build configuration list for PBXProject "IB_Calisthenics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CECC7C8E14916CAE00323677;
+			productRefGroup = CECC7C9A14916CAE00323677 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CECC7C9814916CAE00323677 /* IB_Calisthenics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CECC7C9714916CAE00323677 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECC7CA814916CAE00323677 /* InfoPlist.strings in Resources */,
+				CECC7CAE14916CAE00323677 /* Credits.rtf in Resources */,
+				CECC7CB414916CAF00323677 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CECC7C9514916CAE00323677 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECC7CAB14916CAE00323677 /* main.m in Sources */,
+				CECC7CB114916CAE00323677 /* IB_CalisthenicsAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CECC7CA614916CAE00323677 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CECC7CA714916CAE00323677 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CECC7CAC14916CAE00323677 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CECC7CAD14916CAE00323677 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CECC7CB214916CAF00323677 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CECC7CB314916CAF00323677 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CECC7CB514916CAF00323677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CECC7CB614916CAF00323677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CECC7CB814916CAF00323677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IB_Calisthenics/IB_Calisthenics-Prefix.pch";
+				INFOPLIST_FILE = "IB_Calisthenics/IB_Calisthenics-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CECC7CB914916CAF00323677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IB_Calisthenics/IB_Calisthenics-Prefix.pch";
+				INFOPLIST_FILE = "IB_Calisthenics/IB_Calisthenics-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CECC7C9314916CAE00323677 /* Build configuration list for PBXProject "IB_Calisthenics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECC7CB514916CAF00323677 /* Debug */,
+				CECC7CB614916CAF00323677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CECC7CB714916CAF00323677 /* Build configuration list for PBXNativeTarget "IB_Calisthenics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CECC7CB814916CAF00323677 /* Debug */,
+				CECC7CB914916CAF00323677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CECC7C9014916CAE00323677 /* Project object */;
+}
