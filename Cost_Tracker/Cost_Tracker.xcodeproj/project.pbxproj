@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE32307A1495648800586B9D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3230791495648800586B9D /* Person.m */; };
+		CE3230921495666E00586B9D /* Meeting.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3230911495666E00586B9D /* Meeting.m */; };
+		CE8908E11495535F00E9E75C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8908E01495535F00E9E75C /* Cocoa.framework */; };
+		CE8908EB1495535F00E9E75C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE8908E91495535F00E9E75C /* InfoPlist.strings */; };
+		CE8908EE1495535F00E9E75C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8908ED1495535F00E9E75C /* main.m */; };
+		CE8908F11495535F00E9E75C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CE8908EF1495535F00E9E75C /* Credits.rtf */; };
+		CE8908F41495535F00E9E75C /* Cost_TrackerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8908F31495535F00E9E75C /* Cost_TrackerAppDelegate.m */; };
+		CE8908F71495536000E9E75C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8908F51495536000E9E75C /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE3230781495648800586B9D /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		CE3230791495648800586B9D /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		CE3230901495666E00586B9D /* Meeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meeting.h; sourceTree = "<group>"; };
+		CE3230911495666E00586B9D /* Meeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meeting.m; sourceTree = "<group>"; };
+		CE8620571496966D0002601A /* en */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = en; path = en.lproj/Cost_TrackerAppDelegate.h; sourceTree = "<group>"; };
+		CE8908DC1495535F00E9E75C /* Cost_Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cost_Tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8908E01495535F00E9E75C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CE8908E31495535F00E9E75C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CE8908E41495535F00E9E75C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CE8908E51495535F00E9E75C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE8908E81495535F00E9E75C /* Cost_Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cost_Tracker-Info.plist"; sourceTree = "<group>"; };
+		CE8908EA1495535F00E9E75C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE8908EC1495535F00E9E75C /* Cost_Tracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cost_Tracker-Prefix.pch"; sourceTree = "<group>"; };
+		CE8908ED1495535F00E9E75C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE8908F01495535F00E9E75C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CE8908F31495535F00E9E75C /* Cost_TrackerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cost_TrackerAppDelegate.m; sourceTree = "<group>"; };
+		CE8908F61495536000E9E75C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE8908D91495535F00E9E75C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8908E11495535F00E9E75C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE8908D11495535F00E9E75C = {
+			isa = PBXGroup;
+			children = (
+				CE8908E61495535F00E9E75C /* Cost_Tracker */,
+				CE8908DF1495535F00E9E75C /* Frameworks */,
+				CE8908DD1495535F00E9E75C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE8908DD1495535F00E9E75C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE8908DC1495535F00E9E75C /* Cost_Tracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE8908DF1495535F00E9E75C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE8908E01495535F00E9E75C /* Cocoa.framework */,
+				CE8908E21495535F00E9E75C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE8908E21495535F00E9E75C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE8908E31495535F00E9E75C /* AppKit.framework */,
+				CE8908E41495535F00E9E75C /* CoreData.framework */,
+				CE8908E51495535F00E9E75C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CE8908E61495535F00E9E75C /* Cost_Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				CE3230781495648800586B9D /* Person.h */,
+				CE3230791495648800586B9D /* Person.m */,
+				CE3230901495666E00586B9D /* Meeting.h */,
+				CE3230911495666E00586B9D /* Meeting.m */,
+				CE8620581496966D0002601A /* Cost_TrackerAppDelegate.h */,
+				CE8908F31495535F00E9E75C /* Cost_TrackerAppDelegate.m */,
+				CE8908F51495536000E9E75C /* MainMenu.xib */,
+				CE8908E71495535F00E9E75C /* Supporting Files */,
+			);
+			path = Cost_Tracker;
+			sourceTree = "<group>";
+		};
+		CE8908E71495535F00E9E75C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE8908E81495535F00E9E75C /* Cost_Tracker-Info.plist */,
+				CE8908E91495535F00E9E75C /* InfoPlist.strings */,
+				CE8908EC1495535F00E9E75C /* Cost_Tracker-Prefix.pch */,
+				CE8908ED1495535F00E9E75C /* main.m */,
+				CE8908EF1495535F00E9E75C /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE8908DB1495535F00E9E75C /* Cost_Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8908FA1495536000E9E75C /* Build configuration list for PBXNativeTarget "Cost_Tracker" */;
+			buildPhases = (
+				CE8908D81495535F00E9E75C /* Sources */,
+				CE8908D91495535F00E9E75C /* Frameworks */,
+				CE8908DA1495535F00E9E75C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cost_Tracker;
+			productName = Cost_Tracker;
+			productReference = CE8908DC1495535F00E9E75C /* Cost_Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE8908D31495535F00E9E75C /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = CE8908D61495535F00E9E75C /* Build configuration list for PBXProject "Cost_Tracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE8908D11495535F00E9E75C;
+			productRefGroup = CE8908DD1495535F00E9E75C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE8908DB1495535F00E9E75C /* Cost_Tracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE8908DA1495535F00E9E75C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8908EB1495535F00E9E75C /* InfoPlist.strings in Resources */,
+				CE8908F11495535F00E9E75C /* Credits.rtf in Resources */,
+				CE8908F71495536000E9E75C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE8908D81495535F00E9E75C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8908EE1495535F00E9E75C /* main.m in Sources */,
+				CE8908F41495535F00E9E75C /* Cost_TrackerAppDelegate.m in Sources */,
+				CE32307A1495648800586B9D /* Person.m in Sources */,
+				CE3230921495666E00586B9D /* Meeting.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE8620581496966D0002601A /* Cost_TrackerAppDelegate.h */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE8620571496966D0002601A /* en */,
+			);
+			name = Cost_TrackerAppDelegate.h;
+			sourceTree = "<group>";
+		};
+		CE8908E91495535F00E9E75C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE8908EA1495535F00E9E75C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE8908EF1495535F00E9E75C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE8908F01495535F00E9E75C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CE8908F51495536000E9E75C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE8908F61495536000E9E75C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE8908F81495536000E9E75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CE8908F91495536000E9E75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CE8908FB1495536000E9E75C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cost_Tracker/Cost_Tracker-Prefix.pch";
+				INFOPLIST_FILE = "Cost_Tracker/Cost_Tracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE8908FC1495536000E9E75C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cost_Tracker/Cost_Tracker-Prefix.pch";
+				INFOPLIST_FILE = "Cost_Tracker/Cost_Tracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE8908D61495535F00E9E75C /* Build configuration list for PBXProject "Cost_Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8908F81495536000E9E75C /* Debug */,
+				CE8908F91495536000E9E75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8908FA1495536000E9E75C /* Build configuration list for PBXNativeTarget "Cost_Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8908FB1495536000E9E75C /* Debug */,
+				CE8908FC1495536000E9E75C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE8908D31495535F00E9E75C /* Project object */;
+}
