@@ -110,7 +110,7 @@
 									</object>
 									<object class="NSAttributedString" key="NS.nan">
 										<string key="NSString">NaN</string>
-										<object class="NSDictionary" key="NSAttributes" id="51191980">
+										<object class="NSDictionary" key="NSAttributes">
 											<bool key="EncodedWithXMLCoder">YES</bool>
 											<reference key="dict.sortedKeys" ref="0"/>
 											<reference key="dict.values" ref="0"/>
@@ -241,61 +241,10 @@
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="901796858">
 								<int key="NSCellFlags">68288064</int>
-								<int key="NSCellFlags2">138413056</int>
-								<real value="0.0" key="NSContents"/>
+								<int key="NSCellFlags2">272630784</int>
+								<string key="NSContents">Label</string>
 								<reference key="NSSupport" ref="882442596"/>
-								<object class="NSNumberFormatter" key="NSFormatter" id="278909630">
-									<object class="NSMutableDictionary" key="NS.attributes">
-										<bool key="EncodedWithXMLCoder">YES</bool>
-										<object class="NSArray" key="dict.sortedKeys">
-											<bool key="EncodedWithXMLCoder">YES</bool>
-											<string>allowsFloats</string>
-											<string>formatterBehavior</string>
-											<string>locale</string>
-											<string>negativeInfinitySymbol</string>
-											<string>nilSymbol</string>
-											<string>numberStyle</string>
-											<string>positiveInfinitySymbol</string>
-										</object>
-										<object class="NSMutableArray" key="dict.values">
-											<bool key="EncodedWithXMLCoder">YES</bool>
-											<boolean value="YES"/>
-											<integer value="1040"/>
-											<object class="NSLocale">
-												<string key="NS.identifier"/>
-											</object>
-											<string>-∞</string>
-											<string/>
-											<integer value="1"/>
-											<string>+∞</string>
-										</object>
-									</object>
-									<string key="NS.positiveformat">#,##0.###</string>
-									<string key="NS.negativeformat">#,##0.###</string>
-									<nil key="NS.positiveattrs"/>
-									<nil key="NS.negativeattrs"/>
-									<nil key="NS.zero"/>
-									<object class="NSAttributedString" key="NS.nil">
-										<string key="NSString"/>
-									</object>
-									<object class="NSAttributedString" key="NS.nan">
-										<string key="NSString">NaN</string>
-										<reference key="NSAttributes" ref="51191980"/>
-									</object>
-									<reference key="NS.min" ref="530305949"/>
-									<reference key="NS.max" ref="530305949"/>
-									<object class="NSDecimalNumberHandler" key="NS.rounding">
-										<int key="NS.roundingmode">3</int>
-										<bool key="NS.raise.overflow">YES</bool>
-										<bool key="NS.raise.underflow">YES</bool>
-										<bool key="NS.raise.dividebyzero">YES</bool>
-									</object>
-									<string key="NS.decimal">.</string>
-									<string key="NS.thousand">,</string>
-									<bool key="NS.hasthousands">YES</bool>
-									<bool key="NS.localized">NO</bool>
-									<bool key="NS.allowsfloats">YES</bool>
-								</object>
+								<string key="NSPlaceholderString">0</string>
 								<reference key="NSControlView" ref="841404082"/>
 								<reference key="NSBackgroundColor" ref="288375553"/>
 								<reference key="NSTextColor" ref="842129462"/>
@@ -353,19 +302,19 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
-						<string key="label">value: values.MeetingParticipantCounterKey</string>
+						<string key="label">value: values.meetingParticipantCounter</string>
 						<reference key="source" ref="841404082"/>
 						<reference key="destination" ref="890611073"/>
 						<object class="NSNibBindingConnector" key="connector">
 							<reference key="NSSource" ref="841404082"/>
 							<reference key="NSDestination" ref="890611073"/>
-							<string key="NSLabel">value: values.MeetingParticipantCounterKey</string>
+							<string key="NSLabel">value: values.meetingParticipantCounter</string>
 							<string key="NSBinding">value</string>
-							<string key="NSKeyPath">values.MeetingParticipantCounterKey</string>
+							<string key="NSKeyPath">values.meetingParticipantCounter</string>
 							<int key="NSNibBindingConnectorVersion">2</int>
 						</object>
 					</object>
-					<int key="connectionID">46</int>
+					<int key="connectionID">57</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -491,14 +440,8 @@
 						<reference key="object" ref="901796858"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="278909630"/>
 						</object>
 						<reference key="parent" ref="841404082"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">36</int>
-						<reference key="object" ref="278909630"/>
-						<reference key="parent" ref="901796858"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">39</int>
@@ -539,9 +482,6 @@
 					<string>30.IBPluginDependency</string>
 					<string>31.IBPluginDependency</string>
 					<string>32.IBPluginDependency</string>
-					<string>36.IBNumberFormatterBehaviorMetadataKey</string>
-					<string>36.IBNumberFormatterLocalizesFormatMetadataKey</string>
-					<string>36.IBPluginDependency</string>
 					<string>48.IBNumberFormatterBehaviorMetadataKey</string>
 					<string>48.IBNumberFormatterLocalizesFormatMetadataKey</string>
 					<string>48.IBPluginDependency</string>
@@ -582,9 +522,6 @@
 					<integer value="1041"/>
 					<boolean value="YES"/>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<integer value="1041"/>
-					<boolean value="YES"/>
-					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="unlocalizedProperties">
@@ -599,7 +536,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">48</int>
+			<int key="maxID">57</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
