@@ -9,9 +9,9 @@
 #import "Person.h"
 #import "MeetTrackerPreferences.h"
 
-@implementation Person
-
 NSString *personBillingRateKeypath = @"rate";
+
+@implementation Person
 
 @synthesize participantName;
 @synthesize rate;
@@ -59,7 +59,7 @@ NSString *personBillingRateKeypath = @"rate";
     if (participantName != aName) {
 		[[self undoManager] registerUndoWithTarget:self
 										  selector:@selector(setParticipantName:) 
-											object:[self participantName]];		
+											object:[self participantName]];	
 		[participantName release];
 		participantName = [aName retain];
     }

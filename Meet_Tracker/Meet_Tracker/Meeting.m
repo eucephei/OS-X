@@ -164,6 +164,7 @@
 {
 	LogMethod();
     Person *escapee = [self.personsPresent objectAtIndex:idx];
+    
 	[[[self undoManager] prepareWithInvocationTarget:self]
 	 insertObject:escapee inPersonsPresentAtIndex:idx];
 	[escapee setMeeting:nil];
@@ -215,9 +216,5 @@
 
     return self;
 }
-
-
-
-
 
 @end
