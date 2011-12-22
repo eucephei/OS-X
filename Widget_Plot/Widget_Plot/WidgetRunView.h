@@ -11,6 +11,7 @@
 @class Widget;
 
 @interface WidgetRunView : NSView {
+    
 	Widget *theTestRun;
     
 	NSImage *thumbnailImage;

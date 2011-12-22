@@ -35,7 +35,6 @@
 		[self addTrackingArea:ta];
 		[ta release];
     }
-    
     return self;
 }
 
@@ -46,35 +45,37 @@
 
 - (void)drawRect:(NSRect)dirtyRect
 {
+    double xOffset = theTestRun.timeMinimum;
+	double yOffset = theTestRun.sensorMinimum;
+	double xRange = theTestRun.timeMaximum - theTestRun.timeMinimum;
+	double yRange = theTestRun.sensorMaximum - theTestRun.sensorMinimum;	
+    
     // Drawing code here.
     NSRect bounds = [self bounds];
 	NSLog(@"drawRect: bounds %@", NSStringFromRect(bounds));
     
-	NSBezierPath *pointsPath = [NSBezierPath bezierPath];
-	double xOffset = theTestRun.timeMinimum;
-	double yOffset = theTestRun.sensorMinimum;
-	double xRange = theTestRun.timeMaximum - theTestRun.timeMinimum;
-	double yRange = theTestRun.sensorMaximum - theTestRun.sensorMinimum;	
-	
-	NSPoint xAxisStart = bounds.origin;
+    NSPoint xAxisStart = bounds.origin;
 	NSPoint xAxisEnd = bounds.origin;
 	xAxisEnd.x += bounds.size.width;
-	
-	NSUInteger drawingStyleNumber = [[NSUserDefaults standardUserDefaults] integerForKey:drawingStyleKey];
-	
+    
+    NSBezierPath *pointsPath = [NSBezierPath bezierPath];
 	[pointsPath moveToPoint:xAxisStart];
+    
 	for (NSValue *val in theTestRun.testData) {
 		NSPoint rawPoint = [val pointValue];
 		NSPoint projectedPoint;
 		projectedPoint.x = (rawPoint.x - xOffset)/xRange * bounds.size.width;
 		projectedPoint.y = (rawPoint.y - yOffset)/yRange * bounds.size.height;
-		// NSLog(@"raw %@; projected %@", NSStringFromPoint(rawPoint), NSStringFromPoint(projectedPoint));
+		NSLog(@"raw %@; projected %@", NSStringFromPoint(rawPoint), NSStringFromPoint(projectedPoint));
 		[pointsPath lineToPoint:projectedPoint];
 	}
 	[pointsPath lineToPoint:xAxisEnd];
 	[pointsPath closePath];
     
-	switch (drawingStyleNumber /* [[NSUserDefaults standardUserDefaults] integerForKey:drawingStyleKey]*/) {
+    
+    NSUInteger drawingStyleNumber = [[NSUserDefaults standardUserDefaults] integerForKey:drawingStyleKey];
+    
+    switch (drawingStyleNumber) {
 		case 0:
 			[[NSColor yellowColor] set];
 			[NSBezierPath fillRect:bounds];
@@ -109,15 +110,18 @@
 			NSAssert(NO, @"switch statement fell through");
 			break;
 	}
+    
 	if (self.shouldDrawMouseInfo) {
 		NSDictionary *stringAttributes = 
         [NSDictionary dictionaryWithObjectsAndKeys:[NSColor redColor], NSForegroundColorAttributeName,
          [NSColor blackColor],NSBackgroundColorAttributeName,
          [NSFont fontWithName:@"Verdana-Italic" size:14.], NSFontAttributeName, nil];
 		NSPoint mousePositioinDataCoordinates;
+        
 		mousePositioinDataCoordinates.x = mousePositionViewCoordinates.x / bounds.size.width * xRange + xOffset;
 		mousePositioinDataCoordinates.y = mousePositionViewCoordinates.y / bounds.size.height * yRange + yOffset;
-		NSString *mouseMessage = [NSString stringWithFormat:@"View:(%4.0f, %4.0f) Data:(%4.1f, %4.1f)",
+		
+        NSString *mouseMessage = [NSString stringWithFormat:@"View:(%4.0f, %4.0f) Data:(%4.1f, %4.1f)",
 								  self.mousePositionViewCoordinates,
 								  mousePositioinDataCoordinates];
 		NSLog(@"%@", mouseMessage);
@@ -142,7 +146,6 @@
 {
 	return NSDragOperationCopy;
 }
-
 
 -(NSBitmapImageRep *)myBitmapImageRepresentation
 {
@@ -173,13 +176,13 @@
 	// keep the thumbnail around for repeated mouseDragged: events
 	NSSize displayedSize = self.bounds.size;
 	
-	// this is more steps than I would be likely to use in production code
-	NSSize thumbnailSize;
-	thumbnailSize.height = 100.;
-	double thumbnailSizeRatio = thumbnailSize.height / displayedSize.height;
-	thumbnailSize.width = thumbnailSizeRatio * displayedSize.width;
+	// this is more steps than should be in production code
+    double thumbnailSizeHeight = 100.0;
+	double thumbnailSizeRatio = thumbnailSizeHeight / displayedSize.height;
+    NSSize thumbnailSize = NSMakeSize(thumbnailSizeHeight, thumbnailSizeRatio * displayedSize.width);
 	self.thumbnailImage = [[NSImage alloc] initWithSize:thumbnailSize];
 	[self.thumbnailImage lockFocus];
+    
 	NSRect thumbnailBounds;
 	thumbnailBounds.origin = NSZeroPoint;
 	thumbnailBounds.size = self.thumbnailImage.size;
@@ -187,9 +190,11 @@
 	NSRect drawFromRect;
 	drawFromRect.origin = NSZeroPoint;
 	drawFromRect.size = fullImageRepresenation.size;
+    
 	NSRect drawToRect;
 	drawToRect.origin = NSZeroPoint;
 	drawToRect.size = self.thumbnailImage.size;
+    
 	[fullImageRepresenation drawInRect:drawToRect
 							  fromRect:drawFromRect
 							 operation:NSCompositeSourceOver
@@ -197,9 +202,7 @@
 						respectFlipped:YES
 								 hints:nil];
 	[self.thumbnailImage unlockFocus];
-	
 }
-
 
 #pragma mark -
 #pragma mark mouse events
@@ -246,7 +249,6 @@
 	}
 }
 
-
 - (void)mouseExited:(NSEvent *)theEvent
 {
 	NSLog(@"mouseExited: %@", NSStringFromPoint(theEvent.locationInWindow));
@@ -256,6 +258,9 @@
 	[self setNeedsDisplay:YES];
 }
 
+#pragma mark -
+#pragma mark actions
+
 - (IBAction)savePDF:(id)sender
 {
 	NSSavePanel *panel = [NSSavePanel savePanel];
@@ -263,9 +268,7 @@
 	[panel beginSheetForDirectory:nil file:nil modalForWindow:[self window] modalDelegate:self didEndSelector:@selector(didEnd:returnCode:contextInfo:) contextInfo:NULL];
 }
 
--(void)didEnd:(NSSavePanel *)sheet
-   returnCode:(int)code 
-  contextInfo:(void *)contextInfo
+-(void)didEnd:(NSSavePanel *)sheet returnCode:(int)code contextInfo:(void *)contextInfo
 {
 	if (code != NSOKButton) return;
 	

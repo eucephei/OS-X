@@ -47,10 +47,12 @@
 {
 	NSUInteger i;
 	NSPoint p;
-	double timeIncrement = 0.1;
+	
+    double timeIncrement = 0.1;
 	double startingTime = 10.0;
 	double sensorValueMean = 13.2;
 	int sensorValueRange = 8;
+    
 	self.sensorMinimum = sensorValueMean + sensorValueRange;
 	self.sensorMaximum = sensorValueMean - sensorValueRange;
     
@@ -62,7 +64,7 @@
 		self.sensorMinimum = MIN(p.y, self.sensorMinimum);
 		self.sensorMaximum = MAX(p.y, self.sensorMaximum);
         
-        // use NSValue to convert from C struct (the NSPoint) to what an NSMutableArray can store.
+        // use NSValue to convert from C struct (the NSPoint) to what an NSMutableArray can store
 		// To retrieve it, use below:
         // NSPoint thePoint = [[testData objectAtIndex:0] pointValue];
 		[self.testData addObject:[NSValue valueWithPoint:p]];
