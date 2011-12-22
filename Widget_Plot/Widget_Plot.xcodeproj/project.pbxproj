@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE9165EB14A299FB00EB24A4 /* Widget.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9165EA14A299FB00EB24A4 /* Widget.m */; };
+		CE9165EF14A29A1D00EB24A4 /* WidgetRunView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9165EE14A29A1D00EB24A4 /* WidgetRunView.m */; };
 		CE9C259814A14969008DA6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9C259714A14969008DA6A4 /* Cocoa.framework */; };
 		CE9C25A214A14969008DA6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9C25A014A14969008DA6A4 /* InfoPlist.strings */; };
 		CE9C25A514A14969008DA6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C25A414A14969008DA6A4 /* main.m */; };
@@ -16,17 +18,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE9165E914A299FB00EB24A4 /* Widget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Widget.h; sourceTree = "<group>"; };
+		CE9165EA14A299FB00EB24A4 /* Widget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Widget.m; sourceTree = "<group>"; };
+		CE9165ED14A29A1D00EB24A4 /* WidgetRunView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WidgetRunView.h; sourceTree = "<group>"; };
+		CE9165EE14A29A1D00EB24A4 /* WidgetRunView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WidgetRunView.m; sourceTree = "<group>"; };
+		CE9165F014A29A4D00EB24A4 /* KeyStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; path = KeyStrings.h; sourceTree = "<group>"; };
 		CE9C259314A14969008DA6A4 /* Widget_Plot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Widget_Plot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9C259714A14969008DA6A4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CE9C259A14A14969008DA6A4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		CE9C259B14A14969008DA6A4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CE9C259C14A14969008DA6A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CE9C259F14A14969008DA6A4 /* Widget_Plot-Info.plist */ = {isa = PBXFileReference; path = "Widget_Plot-Info.plist"; sourceTree = "<group>"; };
+		CE9C259F14A14969008DA6A4 /* Widget_Plot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Widget_Plot-Info.plist"; sourceTree = "<group>"; };
 		CE9C25A114A14969008DA6A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CE9C25A314A14969008DA6A4 /* Widget_Plot-Prefix.pch */ = {isa = PBXFileReference; path = "Widget_Plot-Prefix.pch"; sourceTree = "<group>"; };
+		CE9C25A314A14969008DA6A4 /* Widget_Plot-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Widget_Plot-Prefix.pch"; sourceTree = "<group>"; };
 		CE9C25A414A14969008DA6A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE9C25A714A14969008DA6A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		CE9C25A914A14969008DA6A4 /* Widget_PlotAppDelegate.h */ = {isa = PBXFileReference; path = Widget_PlotAppDelegate.h; sourceTree = "<group>"; };
+		CE9C25A914A14969008DA6A4 /* Widget_PlotAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Widget_PlotAppDelegate.h; sourceTree = "<group>"; };
 		CE9C25AA14A14969008DA6A4 /* Widget_PlotAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Widget_PlotAppDelegate.m; sourceTree = "<group>"; };
 		CE9C25AD14A14969008DA6A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +89,11 @@
 		CE9C259D14A14969008DA6A4 /* Widget_Plot */ = {
 			isa = PBXGroup;
 			children = (
+				CE9165F014A29A4D00EB24A4 /* KeyStrings.h */,
+				CE9165E914A299FB00EB24A4 /* Widget.h */,
+				CE9165EA14A299FB00EB24A4 /* Widget.m */,
+				CE9165ED14A29A1D00EB24A4 /* WidgetRunView.h */,
+				CE9165EE14A29A1D00EB24A4 /* WidgetRunView.m */,
 				CE9C25A914A14969008DA6A4 /* Widget_PlotAppDelegate.h */,
 				CE9C25AA14A14969008DA6A4 /* Widget_PlotAppDelegate.m */,
 				CE9C25AC14A14969008DA6A4 /* MainMenu.xib */,
@@ -164,6 +176,8 @@
 			files = (
 				CE9C25A514A14969008DA6A4 /* main.m in Sources */,
 				CE9C25AB14A14969008DA6A4 /* Widget_PlotAppDelegate.m in Sources */,
+				CE9165EB14A299FB00EB24A4 /* Widget.m in Sources */,
+				CE9165EF14A29A1D00EB24A4 /* WidgetRunView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +292,7 @@
 				CE9C25B314A14969008DA6A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

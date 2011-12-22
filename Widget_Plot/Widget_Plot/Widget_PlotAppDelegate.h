@@ -8,11 +8,22 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class Widget;
+@class WidgetRunView;
+
 @interface Widget_PlotAppDelegate : NSObject <NSApplicationDelegate> {
 @private
     NSWindow *window;
+    Widget *widgetTester;
+    
+	IBOutlet WidgetRunView *testView;
+	IBOutlet NSSegmentedControl *stylePicker;
 }
 
 @property (assign) IBOutlet NSWindow *window;
+@property (nonatomic,retain) Widget *widgetTester;
+
+- (IBAction)changeDrawingStyle:(id)sender;
+- (IBAction)performNewTest:(id)sender;
 
 @end
