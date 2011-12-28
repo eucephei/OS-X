@@ -1,0 +1,18 @@
+//
+// Prefix header for all source files of the 'Weather_Underground' target in the 'Weather_Underground' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import <Cocoa/Cocoa.h>
+#endif
+
+#if DEBUG
+    #define MGLog(args...)    NSLog( @"%@", [NSString stringWithFormat: args])
+    #define LogMethod() NSLog(@"%@ %@ %s (line %d)", NSStringFromSelector(_cmd), self, __PRETTY_FUNCTION__, __LINE__)
+#else  
+// DEBUG not defined:
+    #define MGLog(args...)    // do nothing.
+    #define LogMethod() 
+#endif

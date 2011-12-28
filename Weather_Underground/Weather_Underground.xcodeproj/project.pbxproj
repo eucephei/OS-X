@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE9BBE9B14AA8C4A00D0322E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9BBE9A14AA8C4A00D0322E /* Cocoa.framework */; };
+		CE9BBEA514AA8C4A00D0322E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9BBEA314AA8C4A00D0322E /* InfoPlist.strings */; };
+		CE9BBEA814AA8C4A00D0322E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BBEA714AA8C4A00D0322E /* main.m */; };
+		CE9BBEAB14AA8C4A00D0322E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CE9BBEA914AA8C4A00D0322E /* Credits.rtf */; };
+		CE9BBEAE14AA8C4A00D0322E /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BBEAD14AA8C4A00D0322E /* MyDocument.m */; };
+		CE9BBEB114AA8C4A00D0322E /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9BBEAF14AA8C4A00D0322E /* MyDocument.xib */; };
+		CE9BBEB414AA8C4A00D0322E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9BBEB214AA8C4A00D0322E /* MainMenu.xib */; };
+		CE9BBEB714AA8C4A00D0322E /* MyDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE9BBEB514AA8C4A00D0322E /* MyDocument.xcdatamodeld */; };
+		CE9BBEC914AA8E1500D0322E /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BBEC614AA8E1400D0322E /* Location.m */; };
+		CE9BBECA14AA8E1500D0322E /* Observation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BBEC814AA8E1400D0322E /* Observation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE9BBE9614AA8C4A00D0322E /* Weather_Underground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather_Underground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9BBE9A14AA8C4A00D0322E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CE9BBE9D14AA8C4A00D0322E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CE9BBE9E14AA8C4A00D0322E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CE9BBE9F14AA8C4A00D0322E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE9BBEA214AA8C4A00D0322E /* Weather_Underground-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Weather_Underground-Info.plist"; sourceTree = "<group>"; };
+		CE9BBEA414AA8C4A00D0322E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE9BBEA614AA8C4A00D0322E /* Weather_Underground-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weather_Underground-Prefix.pch"; sourceTree = "<group>"; };
+		CE9BBEA714AA8C4A00D0322E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE9BBEAA14AA8C4A00D0322E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CE9BBEAC14AA8C4A00D0322E /* MyDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDocument.h; sourceTree = "<group>"; };
+		CE9BBEAD14AA8C4A00D0322E /* MyDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
+		CE9BBEB014AA8C4A00D0322E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MyDocument.xib; sourceTree = "<group>"; };
+		CE9BBEB314AA8C4A00D0322E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CE9BBEB614AA8C4A00D0322E /* MyDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyDocument.xcdatamodel; sourceTree = "<group>"; };
+		CE9BBEC514AA8E1400D0322E /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		CE9BBEC614AA8E1400D0322E /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		CE9BBEC714AA8E1400D0322E /* Observation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observation.h; sourceTree = "<group>"; };
+		CE9BBEC814AA8E1400D0322E /* Observation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Observation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE9BBE9314AA8C4A00D0322E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9BBE9B14AA8C4A00D0322E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE9BBE8B14AA8C4A00D0322E = {
+			isa = PBXGroup;
+			children = (
+				CE9BBEA014AA8C4A00D0322E /* Weather_Underground */,
+				CE9BBE9914AA8C4A00D0322E /* Frameworks */,
+				CE9BBE9714AA8C4A00D0322E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE9BBE9714AA8C4A00D0322E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE9BBE9614AA8C4A00D0322E /* Weather_Underground.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE9BBE9914AA8C4A00D0322E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE9BBE9A14AA8C4A00D0322E /* Cocoa.framework */,
+				CE9BBE9C14AA8C4A00D0322E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE9BBE9C14AA8C4A00D0322E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE9BBE9D14AA8C4A00D0322E /* AppKit.framework */,
+				CE9BBE9E14AA8C4A00D0322E /* CoreData.framework */,
+				CE9BBE9F14AA8C4A00D0322E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CE9BBEA014AA8C4A00D0322E /* Weather_Underground */ = {
+			isa = PBXGroup;
+			children = (
+				CE9BBEC514AA8E1400D0322E /* Location.h */,
+				CE9BBEC614AA8E1400D0322E /* Location.m */,
+				CE9BBEC714AA8E1400D0322E /* Observation.h */,
+				CE9BBEC814AA8E1400D0322E /* Observation.m */,
+				CE9BBEAC14AA8C4A00D0322E /* MyDocument.h */,
+				CE9BBEAD14AA8C4A00D0322E /* MyDocument.m */,
+				CE9BBEAF14AA8C4A00D0322E /* MyDocument.xib */,
+				CE9BBEB214AA8C4A00D0322E /* MainMenu.xib */,
+				CE9BBEB514AA8C4A00D0322E /* MyDocument.xcdatamodeld */,
+				CE9BBEA114AA8C4A00D0322E /* Supporting Files */,
+			);
+			path = Weather_Underground;
+			sourceTree = "<group>";
+		};
+		CE9BBEA114AA8C4A00D0322E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE9BBEA214AA8C4A00D0322E /* Weather_Underground-Info.plist */,
+				CE9BBEA314AA8C4A00D0322E /* InfoPlist.strings */,
+				CE9BBEA614AA8C4A00D0322E /* Weather_Underground-Prefix.pch */,
+				CE9BBEA714AA8C4A00D0322E /* main.m */,
+				CE9BBEA914AA8C4A00D0322E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE9BBE9514AA8C4A00D0322E /* Weather_Underground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9BBEBA14AA8C4A00D0322E /* Build configuration list for PBXNativeTarget "Weather_Underground" */;
+			buildPhases = (
+				CE9BBE9214AA8C4A00D0322E /* Sources */,
+				CE9BBE9314AA8C4A00D0322E /* Frameworks */,
+				CE9BBE9414AA8C4A00D0322E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Weather_Underground;
+			productName = Weather_Underground;
+			productReference = CE9BBE9614AA8C4A00D0322E /* Weather_Underground.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE9BBE8D14AA8C4A00D0322E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = CE9BBE9014AA8C4A00D0322E /* Build configuration list for PBXProject "Weather_Underground" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE9BBE8B14AA8C4A00D0322E;
+			productRefGroup = CE9BBE9714AA8C4A00D0322E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE9BBE9514AA8C4A00D0322E /* Weather_Underground */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE9BBE9414AA8C4A00D0322E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9BBEA514AA8C4A00D0322E /* InfoPlist.strings in Resources */,
+				CE9BBEAB14AA8C4A00D0322E /* Credits.rtf in Resources */,
+				CE9BBEB114AA8C4A00D0322E /* MyDocument.xib in Resources */,
+				CE9BBEB414AA8C4A00D0322E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE9BBE9214AA8C4A00D0322E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9BBEA814AA8C4A00D0322E /* main.m in Sources */,
+				CE9BBEAE14AA8C4A00D0322E /* MyDocument.m in Sources */,
+				CE9BBEB714AA8C4A00D0322E /* MyDocument.xcdatamodeld in Sources */,
+				CE9BBEC914AA8E1500D0322E /* Location.m in Sources */,
+				CE9BBECA14AA8E1500D0322E /* Observation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE9BBEA314AA8C4A00D0322E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9BBEA414AA8C4A00D0322E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE9BBEA914AA8C4A00D0322E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9BBEAA14AA8C4A00D0322E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CE9BBEAF14AA8C4A00D0322E /* MyDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9BBEB014AA8C4A00D0322E /* en */,
+			);
+			name = MyDocument.xib;
+			sourceTree = "<group>";
+		};
+		CE9BBEB214AA8C4A00D0322E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9BBEB314AA8C4A00D0322E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE9BBEB814AA8C4A00D0322E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CE9BBEB914AA8C4A00D0322E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CE9BBEBB14AA8C4A00D0322E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Weather_Underground/Weather_Underground-Prefix.pch";
+				INFOPLIST_FILE = "Weather_Underground/Weather_Underground-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE9BBEBC14AA8C4A00D0322E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Weather_Underground/Weather_Underground-Prefix.pch";
+				INFOPLIST_FILE = "Weather_Underground/Weather_Underground-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE9BBE9014AA8C4A00D0322E /* Build configuration list for PBXProject "Weather_Underground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9BBEB814AA8C4A00D0322E /* Debug */,
+				CE9BBEB914AA8C4A00D0322E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9BBEBA14AA8C4A00D0322E /* Build configuration list for PBXNativeTarget "Weather_Underground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9BBEBB14AA8C4A00D0322E /* Debug */,
+				CE9BBEBC14AA8C4A00D0322E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE9BBEB514AA8C4A00D0322E /* MyDocument.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE9BBEB614AA8C4A00D0322E /* MyDocument.xcdatamodel */,
+			);
+			currentVersion = CE9BBEB614AA8C4A00D0322E /* MyDocument.xcdatamodel */;
+			path = MyDocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE9BBE8D14AA8C4A00D0322E /* Project object */;
+}
