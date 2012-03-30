@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE9FBE0715214B6A0057FB86 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FBE0615214B6A0057FB86 /* Cocoa.framework */; };
+		CE9FBE1115214B6A0057FB86 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9FBE0F15214B6A0057FB86 /* InfoPlist.strings */; };
+		CE9FBE1415214B6A0057FB86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FBE1315214B6A0057FB86 /* main.m */; };
+		CE9FBE1715214B6A0057FB86 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CE9FBE1515214B6A0057FB86 /* Credits.rtf */; };
+		CE9FBE1A15214B6A0057FB86 /* DesktopServiceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FBE1915214B6A0057FB86 /* DesktopServiceAppDelegate.m */; };
+		CE9FBE1D15214B6A0057FB86 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9FBE1B15214B6A0057FB86 /* MainMenu.xib */; };
+		CE9FBE2515214BC20057FB86 /* ListenService.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FBE2415214BC20057FB86 /* ListenService.m */; };
+		CE9FBE28152152070057FB86 /* ApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FBE27152152070057FB86 /* ApplicationController.m */; };
+		CE9FBE2B152152500057FB86 /* FractalControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FBE2A152152500057FB86 /* FractalControl.m */; };
+		CE9FBE2E152152610057FB86 /* FractalGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FBE2D152152610057FB86 /* FractalGenerator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE9FBE0215214B6A0057FB86 /* DesktopService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesktopService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9FBE0615214B6A0057FB86 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CE9FBE0915214B6A0057FB86 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CE9FBE0A15214B6A0057FB86 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CE9FBE0B15214B6A0057FB86 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE9FBE0E15214B6A0057FB86 /* DesktopService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DesktopService-Info.plist"; sourceTree = "<group>"; };
+		CE9FBE1015214B6A0057FB86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE9FBE1215214B6A0057FB86 /* DesktopService-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DesktopService-Prefix.pch"; sourceTree = "<group>"; };
+		CE9FBE1315214B6A0057FB86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE9FBE1615214B6A0057FB86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CE9FBE1815214B6A0057FB86 /* DesktopServiceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DesktopServiceAppDelegate.h; sourceTree = "<group>"; };
+		CE9FBE1915214B6A0057FB86 /* DesktopServiceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesktopServiceAppDelegate.m; sourceTree = "<group>"; };
+		CE9FBE1C15214B6A0057FB86 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CE9FBE2315214BC20057FB86 /* ListenService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListenService.h; sourceTree = "<group>"; };
+		CE9FBE2415214BC20057FB86 /* ListenService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListenService.m; sourceTree = "<group>"; };
+		CE9FBE26152152070057FB86 /* ApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationController.h; sourceTree = "<group>"; };
+		CE9FBE27152152070057FB86 /* ApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationController.m; sourceTree = "<group>"; };
+		CE9FBE29152152500057FB86 /* FractalControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FractalControl.h; sourceTree = "<group>"; };
+		CE9FBE2A152152500057FB86 /* FractalControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FractalControl.m; sourceTree = "<group>"; };
+		CE9FBE2C152152610057FB86 /* FractalGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FractalGenerator.h; sourceTree = "<group>"; };
+		CE9FBE2D152152610057FB86 /* FractalGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FractalGenerator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE9FBDFF15214B6A0057FB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9FBE0715214B6A0057FB86 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE9FBDF715214B6A0057FB86 = {
+			isa = PBXGroup;
+			children = (
+				CE9FBE0C15214B6A0057FB86 /* DesktopService */,
+				CE9FBE0515214B6A0057FB86 /* Frameworks */,
+				CE9FBE0315214B6A0057FB86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE9FBE0315214B6A0057FB86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE9FBE0215214B6A0057FB86 /* DesktopService.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE9FBE0515214B6A0057FB86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE9FBE0615214B6A0057FB86 /* Cocoa.framework */,
+				CE9FBE0815214B6A0057FB86 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE9FBE0815214B6A0057FB86 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE9FBE0915214B6A0057FB86 /* AppKit.framework */,
+				CE9FBE0A15214B6A0057FB86 /* CoreData.framework */,
+				CE9FBE0B15214B6A0057FB86 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CE9FBE0C15214B6A0057FB86 /* DesktopService */ = {
+			isa = PBXGroup;
+			children = (
+				CE9FBE29152152500057FB86 /* FractalControl.h */,
+				CE9FBE2A152152500057FB86 /* FractalControl.m */,
+				CE9FBE2C152152610057FB86 /* FractalGenerator.h */,
+				CE9FBE2D152152610057FB86 /* FractalGenerator.m */,
+				CE9FBE26152152070057FB86 /* ApplicationController.h */,
+				CE9FBE27152152070057FB86 /* ApplicationController.m */,
+				CE9FBE2315214BC20057FB86 /* ListenService.h */,
+				CE9FBE2415214BC20057FB86 /* ListenService.m */,
+				CE9FBE1815214B6A0057FB86 /* DesktopServiceAppDelegate.h */,
+				CE9FBE1915214B6A0057FB86 /* DesktopServiceAppDelegate.m */,
+				CE9FBE1B15214B6A0057FB86 /* MainMenu.xib */,
+				CE9FBE0D15214B6A0057FB86 /* Supporting Files */,
+			);
+			path = DesktopService;
+			sourceTree = "<group>";
+		};
+		CE9FBE0D15214B6A0057FB86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE9FBE0E15214B6A0057FB86 /* DesktopService-Info.plist */,
+				CE9FBE0F15214B6A0057FB86 /* InfoPlist.strings */,
+				CE9FBE1215214B6A0057FB86 /* DesktopService-Prefix.pch */,
+				CE9FBE1315214B6A0057FB86 /* main.m */,
+				CE9FBE1515214B6A0057FB86 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE9FBE0115214B6A0057FB86 /* DesktopService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9FBE2015214B6A0057FB86 /* Build configuration list for PBXNativeTarget "DesktopService" */;
+			buildPhases = (
+				CE9FBDFE15214B6A0057FB86 /* Sources */,
+				CE9FBDFF15214B6A0057FB86 /* Frameworks */,
+				CE9FBE0015214B6A0057FB86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesktopService;
+			productName = DesktopService;
+			productReference = CE9FBE0215214B6A0057FB86 /* DesktopService.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE9FBDF915214B6A0057FB86 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = CE9FBDFC15214B6A0057FB86 /* Build configuration list for PBXProject "DesktopService" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE9FBDF715214B6A0057FB86;
+			productRefGroup = CE9FBE0315214B6A0057FB86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE9FBE0115214B6A0057FB86 /* DesktopService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE9FBE0015214B6A0057FB86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9FBE1115214B6A0057FB86 /* InfoPlist.strings in Resources */,
+				CE9FBE1715214B6A0057FB86 /* Credits.rtf in Resources */,
+				CE9FBE1D15214B6A0057FB86 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE9FBDFE15214B6A0057FB86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9FBE1415214B6A0057FB86 /* main.m in Sources */,
+				CE9FBE1A15214B6A0057FB86 /* DesktopServiceAppDelegate.m in Sources */,
+				CE9FBE2515214BC20057FB86 /* ListenService.m in Sources */,
+				CE9FBE28152152070057FB86 /* ApplicationController.m in Sources */,
+				CE9FBE2B152152500057FB86 /* FractalControl.m in Sources */,
+				CE9FBE2E152152610057FB86 /* FractalGenerator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE9FBE0F15214B6A0057FB86 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9FBE1015214B6A0057FB86 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE9FBE1515214B6A0057FB86 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9FBE1615214B6A0057FB86 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CE9FBE1B15214B6A0057FB86 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE9FBE1C15214B6A0057FB86 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE9FBE1E15214B6A0057FB86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CE9FBE1F15214B6A0057FB86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CE9FBE2115214B6A0057FB86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DesktopService/DesktopService-Prefix.pch";
+				INFOPLIST_FILE = "DesktopService/DesktopService-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE9FBE2215214B6A0057FB86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DesktopService/DesktopService-Prefix.pch";
+				INFOPLIST_FILE = "DesktopService/DesktopService-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE9FBDFC15214B6A0057FB86 /* Build configuration list for PBXProject "DesktopService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9FBE1E15214B6A0057FB86 /* Debug */,
+				CE9FBE1F15214B6A0057FB86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE9FBE2015214B6A0057FB86 /* Build configuration list for PBXNativeTarget "DesktopService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9FBE2115214B6A0057FB86 /* Debug */,
+				CE9FBE2215214B6A0057FB86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE9FBDF915214B6A0057FB86 /* Project object */;
+}

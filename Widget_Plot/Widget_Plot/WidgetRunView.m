@@ -255,6 +255,7 @@
 	self.shouldDrawMouseInfo = NO;
 	self.mousePositionViewCoordinates = [self convertPoint:theEvent.locationInWindow
 												  fromView:nil];
+    
 	[self setNeedsDisplay:YES];
 }
 
